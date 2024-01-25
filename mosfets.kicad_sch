@@ -59,6 +59,40 @@
         )
       )
     )
+    (symbol "BLDC_4-rescue:CONN_1" (pin_numbers hide) (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "P" (at 2.032 0 0)
+        (effects (font (size 1.016 1.016)) (justify left))
+      )
+      (property "Value" "CONN_1" (at 0 1.397 0)
+        (effects (font (size 0.762 0.762)) hide)
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.524 1.524)))
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.524 1.524)))
+      )
+      (symbol "CONN_1_0_1"
+        (polyline
+          (pts
+            (xy -0.762 0)
+            (xy -1.27 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 0.7874)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "CONN_1_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54)
+          (name "1" (effects (font (size 1.524 1.524))))
+          (number "1" (effects (font (size 1.524 1.524))))
+        )
+      )
+    )
     (symbol "BLDC_4-rescue:GND-RESCUE-BLDC_4" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 0 0)
         (effects (font (size 0.762 0.762)) hide)
@@ -634,10 +668,6 @@
     (stroke (width 0) (type default))
     (uuid 02fc1970-29b4-4b3c-a587-44d06c545501)
   )
-  (wire (pts (xy 179.07 101.6) (xy 179.07 97.79))
-    (stroke (width 0) (type default))
-    (uuid 040fe990-3e22-4995-a0af-d703a0895ff1)
-  )
   (wire (pts (xy 95.25 97.79) (xy 95.25 99.06))
     (stroke (width 0) (type default))
     (uuid 078638dd-1ba1-4536-8943-ed5a88e38f98)
@@ -653,10 +683,6 @@
   (wire (pts (xy 218.44 82.55) (xy 219.71 82.55))
     (stroke (width 0) (type default))
     (uuid 084e9a5d-d3ac-4e36-b7f4-2f9adfa56796)
-  )
-  (wire (pts (xy 104.14 92.71) (xy 106.68 92.71))
-    (stroke (width 0) (type default))
-    (uuid 10e27b89-0a6f-4ffb-a516-20f65704878e)
   )
   (wire (pts (xy 161.29 48.26) (xy 172.72 48.26))
     (stroke (width 0) (type default))
@@ -745,10 +771,6 @@
   (wire (pts (xy 73.66 71.12) (xy 95.25 71.12))
     (stroke (width 0) (type default))
     (uuid 39615bab-5864-48ba-bfdc-27b1a8cd6061)
-  )
-  (wire (pts (xy 234.95 95.25) (xy 238.125 95.25))
-    (stroke (width 0) (type default))
-    (uuid 3be5f551-a67e-48ee-8f8d-205ff238aa13)
   )
   (wire (pts (xy 214.63 82.55) (xy 214.63 95.25))
     (stroke (width 0) (type default))
@@ -894,10 +916,6 @@
   (wire (pts (xy 109.22 113.03) (xy 109.22 114.3))
     (stroke (width 0) (type default))
     (uuid 78bc2ecd-d68e-4ad9-a0f5-31e081e5c6c9)
-  )
-  (wire (pts (xy 170.18 95.25) (xy 172.72 95.25))
-    (stroke (width 0) (type default))
-    (uuid 7c771fe6-0765-44b0-be90-2e329474027e)
   )
   (wire (pts (xy 95.25 92.71) (xy 95.25 95.25))
     (stroke (width 0) (type default))
@@ -1176,6 +1194,10 @@
     (stroke (width 0) (type default))
     (uuid def5f2c5-a568-442b-bc9b-8c5f59664400)
   )
+  (wire (pts (xy 179.07 97.79) (xy 179.07 101.6))
+    (stroke (width 0) (type default))
+    (uuid e02794ca-b880-4458-8189-953b6fff9b7a)
+  )
   (wire (pts (xy 162.56 95.25) (xy 165.1 95.25))
     (stroke (width 0) (type default))
     (uuid e23481e3-e04a-45fb-b34e-9ba402535305)
@@ -1355,18 +1377,6 @@
     (effects (font (size 1.524 1.524)) (justify right))
     (uuid 186ee603-e2f4-4d27-90a6-e432a36338a5)
   )
-  (hierarchical_label "PHASE_1" (shape output) (at 106.68 92.71 0) (fields_autoplaced)
-    (effects (font (size 1.524 1.524)) (justify left))
-    (uuid 3a5f3e3e-773c-4417-869c-72d93a62af06)
-  )
-  (hierarchical_label "PHASE_3" (shape output) (at 238.125 95.25 0) (fields_autoplaced)
-    (effects (font (size 1.524 1.524)) (justify left))
-    (uuid 47c3956f-85f2-4617-846d-3490e4bf585a)
-  )
-  (hierarchical_label "PHASE_2" (shape output) (at 172.72 95.25 0) (fields_autoplaced)
-    (effects (font (size 1.524 1.524)) (justify left))
-    (uuid 4c8727e4-fac8-4eb0-8063-d8de142ff3de)
-  )
   (hierarchical_label "H3_LOW" (shape passive) (at 223.52 125.73 180) (fields_autoplaced)
     (effects (font (size 1.524 1.524)) (justify right))
     (uuid 55095f0c-8833-4327-b1ab-8fe29010fb23)
@@ -1423,7 +1433,7 @@
     (pin "3" (uuid 21085303-81ca-4e82-9d22-d3fbeb04ade4))
     (pin "2" (uuid 261c7447-5071-4eeb-a3ab-a9c6316de004))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "Q1") (unit 1)
         )
@@ -1450,7 +1460,7 @@
     (pin "2" (uuid d94ee5a1-521c-4747-8baa-cf49fe5e6561))
     (pin "1" (uuid a752aecd-a9f6-4ed7-924e-99a9abaa1d03))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "Q4") (unit 1)
         )
@@ -1477,7 +1487,7 @@
     (pin "1" (uuid 133ff77a-52cb-4dd3-a9e8-19f1664ba639))
     (pin "3" (uuid 975b4513-340b-41f1-b02e-b2b93d79d161))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "Q5") (unit 1)
         )
@@ -1504,7 +1514,7 @@
     (pin "2" (uuid 1b25d649-2017-41e1-af9a-72083ba7f572))
     (pin "1" (uuid 1348a7ed-b3ca-45f0-ab3a-9b36de1fbc57))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "Q2") (unit 1)
         )
@@ -1531,7 +1541,7 @@
     (pin "2" (uuid 841e04f8-250d-4c98-b4a0-3723395cf89a))
     (pin "1" (uuid c73e5d5a-7a23-4d35-8164-8c5a9c1f40ba))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "Q3") (unit 1)
         )
@@ -1558,7 +1568,7 @@
     (pin "2" (uuid 5844aa03-1d8b-4fd0-9686-d0ceed88c83f))
     (pin "1" (uuid 1e9fea19-a63f-469c-bbbc-dbfe9790ab7e))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "Q6") (unit 1)
         )
@@ -1584,7 +1594,7 @@
     (pin "1" (uuid dc72fcba-c3b6-48b2-a79f-ab0d15972c10))
     (pin "2" (uuid 7d95a73e-e47d-48da-9ad2-218d61c00c26))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "R56") (unit 1)
         )
@@ -1612,7 +1622,7 @@
     )
     (pin "1" (uuid f1caed53-9f86-4771-a2b7-0e72fecfdee0))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "#PWR061") (unit 1)
         )
@@ -1641,7 +1651,7 @@
     (pin "1" (uuid 2ec64212-2c50-45d4-a98b-382b3e40ef3c))
     (pin "2" (uuid ac33e063-ef5c-43eb-89f6-fe00e7646298))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "R58") (unit 1)
         )
@@ -1670,7 +1680,7 @@
     (pin "1" (uuid 2b8b0572-1ce3-4fd1-b9ba-fb5a67580421))
     (pin "2" (uuid 679fd595-91cc-4397-ba93-37e784b2ffd5))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "R60") (unit 1)
         )
@@ -1698,7 +1708,7 @@
     )
     (pin "1" (uuid 5632bbb7-79fa-403c-970e-6e7b61299ffe))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "#PWR062") (unit 1)
         )
@@ -1726,7 +1736,7 @@
     )
     (pin "1" (uuid 12c95836-9e7f-465f-82ec-1f060211fbad))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "#PWR063") (unit 1)
         )
@@ -1755,7 +1765,7 @@
     (pin "1" (uuid e13ba3a3-d816-4ce9-aee9-ead04ce69b96))
     (pin "2" (uuid 01316bc5-f122-4e01-b55a-20e28b089074))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "C38") (unit 1)
         )
@@ -1783,7 +1793,7 @@
     )
     (pin "1" (uuid 072c9095-0c70-447f-b7f5-2e5bb7aa6e95))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "#PWR056") (unit 1)
         )
@@ -1812,7 +1822,7 @@
     (pin "2" (uuid b8bb60a0-1ea4-46d7-9f50-c1c81dc1e222))
     (pin "1" (uuid 244ba1bb-fbf0-43ad-8320-149d34653884))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "C36") (unit 1)
         )
@@ -1838,7 +1848,7 @@
     (pin "1" (uuid 63106df3-c703-462d-b80f-10d5e22118b7))
     (pin "2" (uuid 356e11dd-74d4-4630-9d68-eb2d98ac52ec))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "C35") (unit 1)
         )
@@ -1863,7 +1873,7 @@
     )
     (pin "1" (uuid a024952f-ce4e-4b2f-b79f-1cfc1e1599a0))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "#PWR055") (unit 1)
         )
@@ -1892,7 +1902,7 @@
     (pin "1" (uuid b75b4aa4-0139-4c46-9f9a-2b245e577ca5))
     (pin "2" (uuid 7d3c2d43-8f49-4b1d-a164-78949c0086a7))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-0000504f83be"
           (reference "R?") (unit 1)
         )
@@ -1924,7 +1934,7 @@
     (pin "1" (uuid a30482ae-0381-4828-a85b-ad7df84f1036))
     (pin "2" (uuid bab331aa-4a00-4eb2-9698-ebd97df4f036))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-0000504f83be"
           (reference "R?") (unit 1)
         )
@@ -1956,7 +1966,7 @@
     (pin "2" (uuid 503d8072-d521-4efa-a5a6-00567c5446f1))
     (pin "1" (uuid d22c83fb-424c-4907-bdb2-67f6f9df09c2))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-0000504f83be"
           (reference "R?") (unit 1)
         )
@@ -1988,7 +1998,7 @@
     (pin "2" (uuid 0b46e958-0537-4fbe-b4fe-3bcb82cc0123))
     (pin "1" (uuid 7de5b337-9285-4eb1-9633-4a1600d74794))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-0000504f83be"
           (reference "R?") (unit 1)
         )
@@ -2020,7 +2030,7 @@
     (pin "2" (uuid c75ae0cd-07f2-4271-9e23-462bdd692719))
     (pin "1" (uuid ae1eeeb8-9fb8-4fac-ac8a-ab9057158a15))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-0000504f83be"
           (reference "R?") (unit 1)
         )
@@ -2052,7 +2062,7 @@
     (pin "2" (uuid 58634e99-66c9-4a65-b646-ccf45743bef2))
     (pin "1" (uuid 1eda25d4-120b-4464-8e77-d4b3fdb17796))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-0000504f83be"
           (reference "R?") (unit 1)
         )
@@ -2084,7 +2094,7 @@
     (pin "1" (uuid 5e949d4c-e172-47ac-91bf-31a4a545ae44))
     (pin "2" (uuid 550847ec-6407-4359-b7a5-f2c6fcf8296f))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "R53") (unit 1)
         )
@@ -2113,7 +2123,7 @@
     (pin "1" (uuid c52cb0a6-4f9e-4316-9a2f-313011a93919))
     (pin "2" (uuid bf86f053-b752-4a76-94f6-5356081c1ab3))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "C40") (unit 1)
         )
@@ -2141,7 +2151,7 @@
     )
     (pin "1" (uuid a579e8e6-5955-4856-b57f-809406c6484c))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "#PWR058") (unit 1)
         )
@@ -2170,7 +2180,7 @@
     (pin "2" (uuid d5f5f450-ed3d-4b6c-bb5b-65572fcb82f8))
     (pin "1" (uuid ed26c640-4798-4d37-833c-1d8b52385714))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "R54") (unit 1)
         )
@@ -2199,7 +2209,7 @@
     (pin "1" (uuid 3c2a1a8a-b018-4c35-889d-78416612541e))
     (pin "2" (uuid b7608718-d495-4b6e-b3dc-80906bfec431))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "C41") (unit 1)
         )
@@ -2227,7 +2237,7 @@
     )
     (pin "1" (uuid a4478607-f620-42da-83d5-0c94f68cae09))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "#PWR059") (unit 1)
         )
@@ -2256,7 +2266,7 @@
     (pin "1" (uuid 18177948-5c7a-46e2-b2ba-b8e022b4aa5f))
     (pin "2" (uuid aed0c3e0-e0a9-4cd3-a598-8962f603c457))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "R55") (unit 1)
         )
@@ -2285,7 +2295,7 @@
     (pin "1" (uuid 5c9d2a4a-5c1f-4713-abee-de80bdc84ae1))
     (pin "2" (uuid 160755f4-bfaa-4078-9412-cdf0629cfa00))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "C42") (unit 1)
         )
@@ -2313,7 +2323,7 @@
     )
     (pin "1" (uuid a0bbc99a-01fb-4e63-9357-023f03c2d554))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "#PWR060") (unit 1)
         )
@@ -2342,7 +2352,7 @@
     (pin "1" (uuid db258f73-1ff2-45ff-808f-ed8a600df294))
     (pin "2" (uuid b4d50f9f-45d3-45bd-af35-53e9de479fee))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "C39") (unit 1)
         )
@@ -2370,7 +2380,7 @@
     )
     (pin "1" (uuid ebc14cd0-a1af-4d9b-ae9c-cf0288dc4469))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "#PWR057") (unit 1)
         )
@@ -2399,7 +2409,7 @@
     (pin "1" (uuid ddf38591-0cd9-4586-86ec-2253ad0e1628))
     (pin "2" (uuid 834540a8-0bda-491a-a452-a8d8222dd669))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "R59") (unit 1)
         )
@@ -2428,7 +2438,7 @@
     (pin "1" (uuid e52f08f8-7965-40b9-8873-0a24c9af45f2))
     (pin "2" (uuid 0213a67b-96ca-420d-ab9e-4f83f4a742c4))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "R57") (unit 1)
         )
@@ -2457,7 +2467,7 @@
     (pin "2" (uuid 38833d19-4a1e-467f-8d83-34ed259877bd))
     (pin "1" (uuid 581d1f77-5844-437c-9438-cbe9658464e5))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "R61") (unit 1)
         )
@@ -2474,7 +2484,7 @@
     (property "Reference" "R?" (at 207.01 80.01 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "10R" (at 207.01 82.55 90)
+    (property "Value" "20R" (at 207.01 82.55 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 207.01 82.55 0)
@@ -2486,7 +2496,7 @@
     (pin "1" (uuid a23fb609-e104-43d6-bf8a-270bd7d9f2ba))
     (pin "2" (uuid 7321fb02-f7e5-4ac6-8930-e941f6177019))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-0000504f83be"
           (reference "R?") (unit 1)
         )
@@ -2506,7 +2516,7 @@
     (property "Reference" "R?" (at 208.28 104.14 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "10R" (at 208.28 106.68 90)
+    (property "Value" "20R" (at 208.28 106.68 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 208.28 106.68 0)
@@ -2518,7 +2528,7 @@
     (pin "1" (uuid 1a21d084-9e7b-45b4-8531-bd88dfe836c5))
     (pin "2" (uuid 610b4acf-d04c-4bce-bd8b-027f3668555f))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-0000504f83be"
           (reference "R?") (unit 1)
         )
@@ -2538,7 +2548,7 @@
     (property "Reference" "R?" (at 142.24 78.74 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "10R" (at 142.24 81.28 90)
+    (property "Value" "20R" (at 142.24 81.28 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 142.24 81.28 0)
@@ -2550,7 +2560,7 @@
     (pin "2" (uuid 541abf98-4f3f-4063-b62b-7a85efc51cce))
     (pin "1" (uuid 50aa6dc7-478a-4059-b3b7-45452a9ec392))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-0000504f83be"
           (reference "R?") (unit 1)
         )
@@ -2570,7 +2580,7 @@
     (property "Reference" "R?" (at 142.24 102.87 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "10R" (at 142.24 105.41 90)
+    (property "Value" "20R" (at 142.24 105.41 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 142.24 105.41 0)
@@ -2582,7 +2592,7 @@
     (pin "2" (uuid 5e697fbd-42ba-415a-a555-d48134c36ccd))
     (pin "1" (uuid 983a2f85-bbdc-4e31-8f22-de890a4c4d9b))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-0000504f83be"
           (reference "R?") (unit 1)
         )
@@ -2602,7 +2612,7 @@
     (property "Reference" "R?" (at 71.12 101.6 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "10R" (at 71.12 104.14 90)
+    (property "Value" "20R" (at 71.12 104.14 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 71.12 104.14 0)
@@ -2614,7 +2624,7 @@
     (pin "1" (uuid 4a1b1a36-8497-4ac9-9939-029e417c8386))
     (pin "2" (uuid 0d2c4344-0f5b-40a5-b117-b240e60694ae))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-0000504f83be"
           (reference "R?") (unit 1)
         )
@@ -2634,7 +2644,7 @@
     (property "Reference" "R?" (at 71.12 77.47 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "10R" (at 71.12 80.01 90)
+    (property "Value" "20R" (at 71.12 80.01 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 71.12 80.01 0)
@@ -2646,7 +2656,7 @@
     (pin "1" (uuid 15e0eda7-6268-4f50-9c24-837ce1ae5435))
     (pin "2" (uuid 2717624f-82e1-40ba-b2fa-f3a0fac41248))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-0000504f83be"
           (reference "R?") (unit 1)
         )
@@ -2678,7 +2688,7 @@
     (pin "2" (uuid 45fb3cae-15c7-42db-b4a6-3376bd256e3b))
     (pin "1" (uuid cfde1bfd-892b-49af-b536-88e05ec711bd))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "C37") (unit 1)
         )
@@ -2704,7 +2714,7 @@
     (pin "1" (uuid 7f825f49-4ae0-495d-b0e9-7959026e645c))
     (pin "2" (uuid 6eb5e83f-0a6b-4567-9537-2708738f6993))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "R33") (unit 1)
         )
@@ -2733,7 +2743,7 @@
     (pin "1" (uuid 9ee21e60-dcfa-44dc-8c8f-b04157475b81))
     (pin "2" (uuid 0a7342b8-e461-4339-91e2-ce65fd155bc1))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "R37") (unit 1)
         )
@@ -2762,7 +2772,7 @@
     (pin "1" (uuid 50b49e90-3e9e-429a-92ec-ac5fb2845601))
     (pin "2" (uuid 7a84118f-82c8-47e6-8ce3-26bb80b738fb))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "R39") (unit 1)
         )
@@ -2791,7 +2801,7 @@
     (pin "1" (uuid 8beb473b-38df-403b-91e5-faf45838bd35))
     (pin "2" (uuid bc293835-78cc-4de6-a88e-49dd7b1bf826))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "C61") (unit 1)
         )
@@ -2820,7 +2830,7 @@
     (pin "1" (uuid 9c32d4c7-75db-4691-9de9-20e262af8539))
     (pin "2" (uuid 06c8b621-9cc9-4357-a534-3098bfbb3387))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "C62") (unit 1)
         )
@@ -2849,7 +2859,7 @@
     (pin "1" (uuid 5947995c-92ee-434f-9f33-b2111d1863c1))
     (pin "2" (uuid 487d4607-1600-4a7c-8fcc-fa2cb428da33))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "C65") (unit 1)
         )
@@ -2878,7 +2888,7 @@
     (pin "2" (uuid 2b99647b-ca73-4409-ac47-f207174f32ea))
     (pin "1" (uuid 7503b044-e4af-4c24-b877-57ba4a45539a))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "C63") (unit 1)
         )
@@ -2907,7 +2917,7 @@
     (pin "2" (uuid be2e96a6-9314-451e-9872-966cdb1fc3d4))
     (pin "1" (uuid b2ec7a24-148a-40f2-ab73-a8b4ff221c37))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "C66") (unit 1)
         )
@@ -2936,12 +2946,40 @@
     (pin "2" (uuid 9d18d2e6-77a2-46d5-864d-4c225da0c60a))
     (pin "1" (uuid 17769f8f-789d-4fec-a9fe-4fe2c7880a03))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "C67") (unit 1)
         )
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-0000504f83be"
           (reference "C?") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "BLDC_4-rescue:CONN_1") (at 233.68 95.25 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 171baf9b-898f-4fe2-816b-596ef02741da)
+    (property "Reference" "P3" (at 232.41 93.98 0)
+      (effects (font (size 1.016 1.016)) (justify left))
+    )
+    (property "Value" "MOTOR1" (at 233.68 93.853 0)
+      (effects (font (size 0.762 0.762)) hide)
+    )
+    (property "Footprint" "Additions:MountingPad" (at 233.68 95.25 0)
+      (effects (font (size 1.524 1.524)) hide)
+    )
+    (property "Datasheet" "" (at 233.68 95.25 0)
+      (effects (font (size 1.524 1.524)) hide)
+    )
+    (pin "1" (uuid cc0035ec-cef3-4e99-a0c5-eae2d8b4cb5c))
+    (instances
+      (project "Stupid_FOCer"
+        (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1"
+          (reference "P3") (unit 1)
+        )
+        (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
+          (reference "P3") (unit 1)
         )
       )
     )
@@ -2956,7 +2994,7 @@
     (property "Value" "NetTie_2" (at 87.63 127 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 87.63 129.54 0)
+    (property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm" (at 87.63 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 87.63 129.54 0)
@@ -2965,35 +3003,9 @@
     (pin "2" (uuid 4964b141-e36b-42a4-a968-e60eb958ae8e))
     (pin "1" (uuid 002eba37-567e-4957-975f-2342ea71ea61))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "NT10") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:NetTie_2") (at 167.64 95.25 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 31243a2a-8f96-4a2e-9fc8-2c41517594f1)
-    (property "Reference" "NT4" (at 167.64 90.805 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "NetTie_2" (at 167.64 93.345 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 167.64 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 167.64 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 18e807ff-6ebc-41f7-995e-e148a236642a))
-    (pin "2" (uuid 6dfda52f-ebea-432e-94d9-0493a3e2ad0a))
-    (instances
-      (project "Cheap FOCer 2 60mm"
-        (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
-          (reference "NT4") (unit 1)
         )
       )
     )
@@ -3008,16 +3020,16 @@
     (property "Value" "NetTie_2" (at 156.21 129.032 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 156.21 130.81 0)
+    (property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm" (at 156.21 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 156.21 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid 4964b141-e36b-42a4-a968-e60eb958ae8e))
-    (pin "1" (uuid 002eba37-567e-4957-975f-2342ea71ea61))
+    (pin "2" (uuid 4964b141-e36b-42a4-a968-e60eb958ae8f))
+    (pin "1" (uuid 002eba37-567e-4957-975f-2342ea71ea62))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "NT8") (unit 1)
         )
@@ -3034,16 +3046,16 @@
     (property "Value" "NetTie_2" (at 156.21 139.7 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 156.21 142.24 0)
+    (property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm" (at 156.21 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 156.21 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid 4964b141-e36b-42a4-a968-e60eb958ae8e))
-    (pin "1" (uuid 002eba37-567e-4957-975f-2342ea71ea61))
+    (pin "2" (uuid 4964b141-e36b-42a4-a968-e60eb958ae90))
+    (pin "1" (uuid 002eba37-567e-4957-975f-2342ea71ea63))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "NT9") (unit 1)
         )
@@ -3051,27 +3063,29 @@
     )
   )
 
-  (symbol (lib_id "Device:NetTie_2") (at 232.41 95.25 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
-    (uuid 9e7b4d80-1c0c-47ea-a369-2ffa997db70a)
-    (property "Reference" "NT3" (at 233.68 92.075 0)
-      (effects (font (size 1.27 1.27)))
+  (symbol (lib_id "BLDC_4-rescue:CONN_1") (at 102.87 92.71 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid a3fe2a12-61f9-4932-9bf9-14d7c2a7411f)
+    (property "Reference" "P1" (at 101.6 91.44 0)
+      (effects (font (size 1.016 1.016)) (justify left))
     )
-    (property "Value" "NetTie_2" (at 232.41 93.345 0)
-      (effects (font (size 1.27 1.27)))
+    (property "Value" "MOTOR1" (at 102.87 91.313 0)
+      (effects (font (size 0.762 0.762)) hide)
     )
-    (property "Footprint" "" (at 232.41 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
+    (property "Footprint" "Additions:MountingPad" (at 102.87 92.71 0)
+      (effects (font (size 1.524 1.524)) hide)
     )
-    (property "Datasheet" "~" (at 232.41 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
+    (property "Datasheet" "" (at 102.87 92.71 0)
+      (effects (font (size 1.524 1.524)) hide)
     )
-    (pin "1" (uuid 18e807ff-6ebc-41f7-995e-e148a236642a))
-    (pin "2" (uuid 6dfda52f-ebea-432e-94d9-0493a3e2ad0a))
+    (pin "1" (uuid 4dbc8a7d-ef16-4db7-a699-71504cf6b86a))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
+        (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1"
+          (reference "P1") (unit 1)
+        )
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
-          (reference "NT3") (unit 1)
+          (reference "P1") (unit 1)
         )
       )
     )
@@ -3086,7 +3100,7 @@
     (property "Value" "NetTie_2" (at 220.98 139.7 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 220.98 142.24 0)
+    (property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm" (at 220.98 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 220.98 142.24 0)
@@ -3095,7 +3109,7 @@
     (pin "2" (uuid 0a509b77-ba76-46a8-946b-5f8df271a231))
     (pin "1" (uuid d1f2c499-3044-4a8a-8cad-0c09539e111a))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "NT7") (unit 1)
         )
@@ -3112,7 +3126,7 @@
     (property "Value" "NetTie_2" (at 220.98 129.794 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 220.98 132.08 0)
+    (property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm" (at 220.98 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 220.98 132.08 0)
@@ -3121,9 +3135,37 @@
     (pin "1" (uuid 60fb1cc2-a79c-4436-acfe-91be7949376c))
     (pin "2" (uuid 592cab22-f80d-476a-80cc-9631af860c10))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "NT6") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "BLDC_4-rescue:CONN_1") (at 168.91 95.25 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid dfaf5758-be80-4eac-8ece-a0d956297d5c)
+    (property "Reference" "P2" (at 167.64 93.98 0)
+      (effects (font (size 1.016 1.016)) (justify left))
+    )
+    (property "Value" "MOTOR1" (at 168.91 93.853 0)
+      (effects (font (size 0.762 0.762)) hide)
+    )
+    (property "Footprint" "Additions:MountingPad" (at 168.91 95.25 0)
+      (effects (font (size 1.524 1.524)) hide)
+    )
+    (property "Datasheet" "" (at 168.91 95.25 0)
+      (effects (font (size 1.524 1.524)) hide)
+    )
+    (pin "1" (uuid 52720dac-f516-49e1-a7c3-2e7614961a32))
+    (instances
+      (project "Stupid_FOCer"
+        (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1"
+          (reference "P2") (unit 1)
+        )
+        (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
+          (reference "P2") (unit 1)
         )
       )
     )
@@ -3138,44 +3180,18 @@
     (property "Value" "NetTie_2" (at 87.63 137.922 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 87.63 139.7 0)
+    (property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm" (at 87.63 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 87.63 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "2" (uuid 4964b141-e36b-42a4-a968-e60eb958ae8e))
-    (pin "1" (uuid 002eba37-567e-4957-975f-2342ea71ea61))
+    (pin "2" (uuid 4964b141-e36b-42a4-a968-e60eb958ae91))
+    (pin "1" (uuid 002eba37-567e-4957-975f-2342ea71ea64))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
           (reference "NT11") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:NetTie_2") (at 101.6 92.71 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid fb502f76-06b2-4129-b0ad-3ae31b9a8d88)
-    (property "Reference" "NT5" (at 101.6 87.63 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "NetTie_2" (at 101.6 90.17 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 101.6 92.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 101.6 92.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 18e807ff-6ebc-41f7-995e-e148a236642a))
-    (pin "2" (uuid 6dfda52f-ebea-432e-94d9-0493a3e2ad0a))
-    (instances
-      (project "Cheap FOCer 2 60mm"
-        (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f826dc"
-          (reference "NT5") (unit 1)
         )
       )
     )

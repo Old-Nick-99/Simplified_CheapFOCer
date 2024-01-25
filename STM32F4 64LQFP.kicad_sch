@@ -472,115 +472,6 @@
         )
       )
     )
-    (symbol "Connector_Generic:Conn_02x05_Top_Bottom" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 1.27 7.62 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Conn_02x05_Top_Bottom" (at 1.27 -7.62 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "connector" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Generic connector, double row, 02x05, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Connector*:*_2x??_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Conn_02x05_Top_Bottom_1_1"
-        (rectangle (start -1.27 -4.953) (end 0 -5.207)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 -2.413) (end 0 -2.667)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 0.127) (end 0 -0.127)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 2.667) (end 0 2.413)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 5.207) (end 0 4.953)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 6.35) (end 3.81 -6.35)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (rectangle (start 3.81 -4.953) (end 2.54 -5.207)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 3.81 -2.413) (end 2.54 -2.667)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 3.81 0.127) (end 2.54 -0.127)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 3.81 2.667) (end 2.54 2.413)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 3.81 5.207) (end 2.54 4.953)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (pin passive line (at -5.08 5.08 0) (length 3.81)
-          (name "Pin_1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 7.62 -5.08 180) (length 3.81)
-          (name "Pin_10" (effects (font (size 1.27 1.27))))
-          (number "10" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 2.54 0) (length 3.81)
-          (name "Pin_2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 0 0) (length 3.81)
-          (name "Pin_3" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -2.54 0) (length 3.81)
-          (name "Pin_4" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -5.08 0) (length 3.81)
-          (name "Pin_5" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 7.62 5.08 180) (length 3.81)
-          (name "Pin_6" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 7.62 2.54 180) (length 3.81)
-          (name "Pin_7" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 7.62 0 180) (length 3.81)
-          (name "Pin_8" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 7.62 -2.54 180) (length 3.81)
-          (name "Pin_9" (effects (font (size 1.27 1.27))))
-          (number "9" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "Device:Crystal_Small" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "Y" (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
@@ -708,8 +599,16 @@
     (uuid f3debd8a-e136-4c8d-91da-d35bb06e606e)
   )
 
+  (no_connect (at 114.3 148.59) (uuid 00f1c410-8632-4eb6-9ae6-6c9a1c5e063e))
   (no_connect (at 114.3 92.71) (uuid 08d8d0f9-64db-4b60-a906-b5b9f1b0c6e1))
+  (no_connect (at 114.3 128.27) (uuid 116e7499-3592-4275-a593-e5f8ec89467a))
+  (no_connect (at 114.3 153.67) (uuid 1b9e3f68-6aeb-40c9-81a4-1cbc56b667ff))
+  (no_connect (at 114.3 102.87) (uuid 2e1a1147-3877-4ce1-bfe8-8a1be4bc5cd8))
+  (no_connect (at 177.8 83.82) (uuid 3d395cb8-adf2-45bb-8d6d-634e99286837))
+  (no_connect (at 177.8 44.45) (uuid 763391db-2499-4ced-b3ec-6dcb586f0b60))
+  (no_connect (at 177.8 86.36) (uuid c46dcb04-8f73-4197-856b-b8149b4f016a))
   (no_connect (at 114.3 95.25) (uuid d3cd259a-11d5-40f9-b6c2-467a5bad8d67))
+  (no_connect (at 177.8 46.99) (uuid dcb2504f-867e-4158-815c-63063c475523))
 
   (polyline (pts (xy 234.95 67.31) (xy 234.95 90.17))
     (stroke (width 0) (type default))
@@ -736,11 +635,6 @@
     (stroke (width 0) (type default))
     (uuid 05ffd37f-c006-43fc-8217-4fa77ee7a983)
   )
-  (polyline (pts (xy 229.616 105.664) (xy 229.616 128.524))
-    (stroke (width 0) (type default))
-    (uuid 064f3d17-a81d-4776-b05d-7b3d3ccce517)
-  )
-
   (wire (pts (xy 182.88 115.57) (xy 177.8 115.57))
     (stroke (width 0) (type default))
     (uuid 06f6d90f-0d6a-44a7-a6aa-74553e589735)
@@ -964,11 +858,6 @@
     (stroke (width 0) (type default))
     (uuid 92288686-f7fe-459d-a4dc-051fc96eb148)
   )
-  (polyline (pts (xy 229.616 128.524) (xy 262.636 128.524))
-    (stroke (width 0) (type default))
-    (uuid 95f6c580-67d0-4765-9aab-9d9c2d623e8d)
-  )
-
   (wire (pts (xy 196.85 143.51) (xy 196.85 146.05))
     (stroke (width 0) (type default))
     (uuid 9e61104c-da9c-45dd-adc3-f984d9bda0de)
@@ -981,11 +870,6 @@
     (stroke (width 0) (type default))
     (uuid b123c884-811a-4eb4-9383-89ce3db70eca)
   )
-  (polyline (pts (xy 262.636 128.524) (xy 262.636 105.664))
-    (stroke (width 0) (type default))
-    (uuid b3bee98c-71af-4852-ad10-10aa71459e46)
-  )
-
   (wire (pts (xy 196.85 52.07) (xy 204.47 52.07))
     (stroke (width 0) (type default))
     (uuid b4fa6856-9870-461d-b99a-6def204a41f2)
@@ -993,10 +877,6 @@
   (wire (pts (xy 204.47 69.85) (xy 207.01 69.85))
     (stroke (width 0) (type default))
     (uuid b57bc793-68d8-4e01-babc-f1a556d8558e)
-  )
-  (polyline (pts (xy 229.616 105.664) (xy 262.636 105.664))
-    (stroke (width 0) (type default))
-    (uuid b8262788-3a6d-4d8d-a325-8655abe5023f)
   )
   (polyline (pts (xy 262.89 90.17) (xy 262.89 67.31))
     (stroke (width 0) (type default))
@@ -3282,10 +3162,6 @@
     (effects (font (size 1.016 1.016)) (justify left bottom))
     (uuid 71fe84f7-c710-4610-8eb0-346b2deb9024)
   )
-  (text "Unused MCU Pins\n" (at 235.966 132.334 0)
-    (effects (font (size 1.524 1.524) (thickness 0.3048) bold) (justify left bottom))
-    (uuid 78a2e951-c7a6-4a3a-a099-1a9562f97b7e)
-  )
   (text "Programming / Debug\nconnector" (at 234.95 95.25 0)
     (effects (font (size 1.524 1.524) (thickness 0.3048) bold) (justify left bottom))
     (uuid b34f1a0c-2d02-4393-a0aa-8e925d273725)
@@ -3299,24 +3175,10 @@
     (uuid e34c309e-0eb3-4731-b98d-3f24bc9857a5)
   )
 
-  (global_label "PC14" (shape input) (at 253.365 113.665 0)
-    (effects (font (size 1.524 1.524)) (justify left))
-    (uuid 03898adc-f04c-4135-8d92-4d348df4b2f4)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 253.365 113.665 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
   (global_label "NRST" (shape input) (at 247.65 83.82 180)
     (effects (font (size 1.524 1.524)) (justify right))
     (uuid 0c477ef0-e54a-4a2a-bd43-1446b655ec4b)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 247.65 83.82 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "PC14" (shape input) (at 177.8 44.45 0)
-    (effects (font (size 1.524 1.524)) (justify left))
-    (uuid 104b7e4b-d216-4b4e-80a4-9824b724bd65)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 177.8 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
   )
@@ -3327,13 +3189,6 @@
       (effects (font (size 1.27 1.27)) hide)
     )
   )
-  (global_label "PB4" (shape input) (at 177.8 86.36 0)
-    (effects (font (size 1.524 1.524)) (justify left))
-    (uuid 205872fd-781c-4ddf-b1b6-7f8f84bec172)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 177.8 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
   (global_label "PB2" (shape input) (at 180.34 62.23 0)
     (effects (font (size 1.524 1.524)) (justify left))
     (uuid 21b77afd-60f7-4f03-8fa5-971eef1a6b70)
@@ -3341,45 +3196,10 @@
       (effects (font (size 1.27 1.27)) hide)
     )
   )
-  (global_label "PB3" (shape input) (at 177.8 83.82 0)
-    (effects (font (size 1.524 1.524)) (justify left))
-    (uuid 2f6da58b-694b-42a5-b019-bbd398ac6cb0)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 177.8 83.82 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "PC13" (shape input) (at 114.3 148.59 180)
-    (effects (font (size 1.524 1.524)) (justify right))
-    (uuid 2facfa05-c0ab-4614-83e5-1094ff7e057c)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 114.3 148.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "PB12" (shape input) (at 114.3 102.87 180)
-    (effects (font (size 1.524 1.524)) (justify right))
-    (uuid 3377341d-bf95-4cad-9bb0-eb40ce9fd86f)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 114.3 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
   (global_label "SWCLK" (shape input) (at 247.65 76.2 180)
     (effects (font (size 1.524 1.524)) (justify right))
     (uuid 4b7a67b3-d5e7-44f0-a90f-4028778f4c30)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 247.65 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "PB4" (shape input) (at 253.365 123.825 0)
-    (effects (font (size 1.524 1.524)) (justify left))
-    (uuid 5023ceaa-7ff2-4488-b192-a1b8d9ac8950)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 253.365 123.825 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "PB3" (shape input) (at 253.365 121.285 0)
-    (effects (font (size 1.524 1.524)) (justify left))
-    (uuid 553c47a0-0ce7-4bc7-b86d-cd9c200fa6e0)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 253.365 121.285 0)
       (effects (font (size 1.27 1.27)) hide)
     )
   )
@@ -3397,41 +3217,6 @@
       (effects (font (size 1.27 1.27)) hide)
     )
   )
-  (global_label "PD2" (shape input) (at 114.3 153.67 180)
-    (effects (font (size 1.524 1.524)) (justify right))
-    (uuid 942cb032-b4fe-453e-8538-25765faa65ea)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 114.3 153.67 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "PC13" (shape input) (at 240.665 121.285 180)
-    (effects (font (size 1.524 1.524)) (justify right))
-    (uuid 959c5b15-afd0-4853-a737-c043f7a9ed5a)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 240.665 121.285 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "PD2" (shape input) (at 240.665 123.825 180)
-    (effects (font (size 1.524 1.524)) (justify right))
-    (uuid 9c5e3418-6052-42f0-b6f3-b5d3b5fca65d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 240.665 123.825 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "PC15" (shape input) (at 177.8 46.99 0)
-    (effects (font (size 1.524 1.524)) (justify left))
-    (uuid a4176a21-37f4-4a88-a61e-238a66c9b02d)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 177.8 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "PC15" (shape input) (at 253.365 116.205 0)
-    (effects (font (size 1.524 1.524)) (justify left))
-    (uuid b2dc45e0-82ea-434f-a35d-c4292ae0f540)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 253.365 116.205 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
   (global_label "SWDIO" (shape input) (at 247.65 81.28 180)
     (effects (font (size 1.524 1.524)) (justify right))
     (uuid bcec688c-a136-467c-9b6e-e22c696f5e5c)
@@ -3439,45 +3224,10 @@
       (effects (font (size 1.27 1.27)) hide)
     )
   )
-  (global_label "PC5" (shape input) (at 240.665 118.745 180)
-    (effects (font (size 1.524 1.524)) (justify right))
-    (uuid bd92ce18-6b3d-4ee1-b285-8586500a580b)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 240.665 118.745 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
   (global_label "NRST" (shape input) (at 207.01 69.85 0)
     (effects (font (size 1.524 1.524)) (justify left))
     (uuid cc533fa7-6e54-49ea-ba1b-1e71c1c44841)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 207.01 69.85 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "PB12" (shape input) (at 240.665 116.205 180)
-    (effects (font (size 1.524 1.524)) (justify right))
-    (uuid d4035d7a-ee09-4b8e-b629-c97beb1ba42b)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 240.665 116.205 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "PA15" (shape input) (at 253.365 118.745 0)
-    (effects (font (size 1.524 1.524)) (justify left))
-    (uuid d771e196-7d4b-460e-9355-0ab98896412e)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 253.365 118.745 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "PB2" (shape input) (at 240.665 113.665 180)
-    (effects (font (size 1.524 1.524)) (justify right))
-    (uuid ecc5dbdc-d071-4d95-bbb7-de720f268912)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 240.665 113.665 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-  (global_label "PC5" (shape input) (at 114.3 128.27 180)
-    (effects (font (size 1.524 1.524)) (justify right))
-    (uuid f6df1781-a80c-4e21-90a6-4de5ac591da7)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 114.3 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
   )
@@ -3711,7 +3461,7 @@
     (pin "59" (uuid 4233870e-334f-4059-aa31-a89750357dab))
     (pin "62" (uuid 528a7711-0510-4ada-9ac4-af6c94e9a524))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "U5") (unit 1)
         )
@@ -3737,7 +3487,7 @@
     (pin "2" (uuid 805f4c1f-1cba-44e5-b6b4-1503bae47445))
     (pin "1" (uuid 6b37352a-6027-4806-9df2-74cc6fdb58b4))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "C56") (unit 1)
         )
@@ -3763,7 +3513,7 @@
     (pin "1" (uuid 3be8970b-855a-467f-b834-f4c16e87640d))
     (pin "2" (uuid 8ab51edf-9ab0-4ee2-9e98-153015eb1b61))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "C55") (unit 1)
         )
@@ -3788,7 +3538,7 @@
     )
     (pin "1" (uuid 018c764d-2813-4247-85c9-64b7780878c8))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "#PWR081") (unit 1)
         )
@@ -3813,7 +3563,7 @@
     )
     (pin "1" (uuid 14316467-2986-45a5-a25c-a3a2185bebc1))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "#PWR078") (unit 1)
         )
@@ -3838,7 +3588,7 @@
     )
     (pin "1" (uuid d2c82b9a-40d7-4ba8-ad00-ba867740f737))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "#PWR079") (unit 1)
         )
@@ -3863,7 +3613,7 @@
     )
     (pin "1" (uuid b85cfd1e-d2bc-4098-9497-16f73287bfc6))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "#PWR077") (unit 1)
         )
@@ -3889,7 +3639,7 @@
     (pin "1" (uuid b4043750-3588-40ec-a729-e2b02c7d6021))
     (pin "2" (uuid 202470c4-19fe-4ba3-8551-704379571a87))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "C50") (unit 1)
         )
@@ -3915,7 +3665,7 @@
     (pin "1" (uuid 280ac61a-e7b1-458d-b593-28d71e11e333))
     (pin "2" (uuid add401e3-1c34-4b80-8253-bbc5e307a2db))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "C51") (unit 1)
         )
@@ -3940,7 +3690,7 @@
     )
     (pin "1" (uuid d667c994-18e8-471b-88ce-6dd1246f00e4))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "#PWR071") (unit 1)
         )
@@ -3965,7 +3715,7 @@
     )
     (pin "1" (uuid 9c1c0e9b-62a8-4ece-8a6d-3a1213b8168f))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "#PWR073") (unit 1)
         )
@@ -3991,7 +3741,7 @@
     (pin "2" (uuid 7214fe3f-459d-4f31-913f-9fa882ad476a))
     (pin "1" (uuid b9f037c0-8c26-42e4-a741-00add73018fc))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "C53") (unit 1)
         )
@@ -4017,7 +3767,7 @@
     (pin "2" (uuid 1bc527d5-a621-4c8d-a3a1-ceb8fd2b8fa5))
     (pin "1" (uuid 08531d70-a59d-41a5-8d02-44ff754bf30e))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "C54") (unit 1)
         )
@@ -4042,7 +3792,7 @@
     )
     (pin "1" (uuid 692d0edb-1017-4a48-bbcc-0179d65a8ce9))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "#PWR080") (unit 1)
         )
@@ -4067,7 +3817,7 @@
     )
     (pin "1" (uuid f6cfded9-816b-4c54-b9ee-68d6aeaf5c1f))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "#PWR076") (unit 1)
         )
@@ -4093,7 +3843,7 @@
     (pin "1" (uuid 1c048893-6daf-4d3f-8f55-e0c740e63197))
     (pin "2" (uuid 1a8ae125-016d-4056-b6b1-30e5d347561d))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "C52") (unit 1)
         )
@@ -4122,7 +3872,7 @@
     (pin "4" (uuid 74d76d4c-c89f-4c07-aca6-901dbbaaaa63))
     (pin "5" (uuid ca9fb55a-4de6-4e62-b826-f60461858066))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "P5") (unit 1)
         )
@@ -4147,7 +3897,7 @@
     )
     (pin "1" (uuid 94f3fedc-3eae-4c52-a9eb-877d28ce75a6))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "#PWR074") (unit 1)
         )
@@ -4172,7 +3922,7 @@
     )
     (pin "1" (uuid 50180983-c4f6-42be-b3f5-27520aebbb46))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "#PWR075") (unit 1)
         )
@@ -4198,7 +3948,7 @@
     (pin "1" (uuid e6d66870-800f-48ed-a1ef-d35884426637))
     (pin "2" (uuid d6aa7c38-c28d-4b88-a1c2-aef90e1b1adb))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "C45") (unit 1)
         )
@@ -4224,7 +3974,7 @@
     (pin "1" (uuid e9d348a9-39ad-4cfc-9e5f-20ece754f8e5))
     (pin "2" (uuid ffaf8868-6881-439b-be0d-556ccb3d3869))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "C46") (unit 1)
         )
@@ -4250,7 +4000,7 @@
     (pin "1" (uuid 983c084d-df3e-47bf-9601-5bf7d5027bc7))
     (pin "2" (uuid c54b266b-cb29-47da-b9db-3625ad9ea3fd))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "C49") (unit 1)
         )
@@ -4275,7 +4025,7 @@
     )
     (pin "1" (uuid 82e06e5c-aba5-4d1a-a495-9b71de0a07a8))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "#PWR072") (unit 1)
         )
@@ -4300,7 +4050,7 @@
     )
     (pin "1" (uuid b9bc11fd-8b96-4bd5-ac8e-e934b9f31fdb))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "#PWR070") (unit 1)
         )
@@ -4326,7 +4076,7 @@
     (pin "1" (uuid dc111a54-f21f-459c-8ce4-15cc23c82039))
     (pin "2" (uuid c656fed7-d1ce-4c9d-8246-3f29cb845add))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "C47") (unit 1)
         )
@@ -4352,7 +4102,7 @@
     (pin "2" (uuid 0ab14596-435d-45e7-b294-0721901bc585))
     (pin "1" (uuid a1db210b-d2c8-4921-8f91-13fad5dbfca0))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "C48") (unit 1)
         )
@@ -4381,43 +4131,9 @@
     (pin "2" (uuid 6083e6b2-ddc5-4f19-97d3-6ad87f7bcd6d))
     (pin "1" (uuid 083472f0-9e06-43ec-ab64-b351f40d5ee0))
     (instances
-      (project "Cheap FOCer 2 60mm"
+      (project "Stupid_FOCer"
         (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
           (reference "X1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_02x05_Top_Bottom") (at 245.745 118.745 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid ccdc2fa4-7116-4773-94e4-5b5b82df0d0a)
-    (property "Reference" "J1" (at 247.015 108.1532 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "UNUSED MCU PINS" (at 247.015 110.4646 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_2x05_P2.00mm_Vertical" (at 245.745 118.745 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 245.745 118.745 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "3" (uuid e2f310fe-5e98-4a78-82bd-7971e45f1635))
-    (pin "5" (uuid eda75a5f-afec-43bf-a9ea-283b0cfbfb88))
-    (pin "8" (uuid dee10648-b647-4e17-83e1-994ec98a1f5c))
-    (pin "6" (uuid 13a01c2e-b4d8-4e89-8a6e-6660cac2404d))
-    (pin "10" (uuid dae2ba03-33c0-451a-bd1b-c479ecbc1507))
-    (pin "9" (uuid 1c1e256f-d6a1-4814-bd4a-dd3737ee4c78))
-    (pin "2" (uuid 4f260f07-52ff-4a17-952d-227e219a74cf))
-    (pin "1" (uuid 06fe5504-2b63-4f3d-b109-778c2b19a823))
-    (pin "7" (uuid 209e03b7-aa1e-41eb-9bc8-e136c3b91ce0))
-    (pin "4" (uuid 155c27eb-6c6d-4521-addf-e7c598e4c6d7))
-    (instances
-      (project "Cheap FOCer 2 60mm"
-        (path "/7506c327-9faf-4dec-a7c5-c97d7eb486d1/00000000-0000-0000-0000-000053f7501a"
-          (reference "J1") (unit 1)
         )
       )
     )
